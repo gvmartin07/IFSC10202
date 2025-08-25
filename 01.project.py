@@ -18,8 +18,9 @@ minutes = remainingseconds // 60
 #finding leftover seconds
 remainingseconds = remainingseconds - minutes*60
 #printing out the time
-print("Years:" years)
-print(days)
-print(hours)
-print(minutes)
-print(remainingseconds)
+print("Years: ")
+print(years)
+print("Days: ")
+print("Hours: ")
+print("Minutes: ")
+print("Seconds: ")
