@@ -1,0 +1,1 @@
+#distance formula: d = r * arccos(sinx1) * sin(x2) + cos(x1) * cos(x2) * cos(y1-y2)
