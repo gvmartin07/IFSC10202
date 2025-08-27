@@ -1,0 +1,6 @@
+number = input("Enter a Number: ")
+number = int(number)
+ones = (number % 10)
+tens = (number // 1)
+print(f"Ones Digit: {ones}")
+print(f"Tens Digit: {tens}")
