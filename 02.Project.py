@@ -17,5 +17,6 @@ y2 = float(y2*pi/180)
 x2 = float(input("Enter ending point longitude: "))
 #converting ending point log to radians
 x2 = float(x2*pi/180)
+#finding great circle distance
 gcdistance = r * acos(sin(x1)) * sin(x2) + cos(x1) * cos(x2) * cos(y1-y2)
-print(gcdistance)
+print(round(gcdistance, 2))
