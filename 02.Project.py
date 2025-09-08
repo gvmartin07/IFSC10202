@@ -1,4 +1,4 @@
-# distance formula: d = r * arccos(sinx1) * sin(x2) + cos(x1) * cos(x2) * cos(y1-y2)
+# distance formula: d = r * arccos((sinx1) * sin(x2) + cos(x1) * cos(x2) * cos(y1-y2))
 from math import pi
 from math import acos
 from math import sin
@@ -15,5 +15,5 @@ x1 = (log1*pi/180)
 y2 = (lat2*pi/180)
 x2 = (log2*pi/180)
 #finding great circle distance
-gcdistance = r * acos(sin(x1)) * sin(x2) + cos(x1) * cos(x2) * cos(y1-y2)
+gcdistance = r * acos(sin(x1) * sin(x2) + cos(x1) * cos(x2) * cos(y1-y2))
 print(round(gcdistance, 2))
