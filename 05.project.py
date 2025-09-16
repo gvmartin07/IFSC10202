@@ -5,19 +5,21 @@
 startrange = int(input("Enter start of range: "))
 endrange = int(input("Enter end of range: "))
 for num in range(startrange, endrange+1):
+    #finding how many digits in number
     temp = num
     digits = 0
     while temp > 0:
         temp = temp//10
         digits += 1
     
-    
-    
-    num = temp
-    sum = 0
+    #adding up each ones digit after * to digit count and shortening number
+    temp = num
+    total = 0
     while temp > 0:
         value = temp%10
-        sum += value**digits
+        total += value**digits
         temp = temp // 10
-    if sum == num:
+    
+    #finding if its special number
+    if total == num:
         print(num)
