@@ -4,18 +4,20 @@
 #special num 153 = 1^3 + 5^3 + 3^3
 startrange = int(input("Enter start of range: "))
 endrange = int(input("Enter end of range: "))
-for i in range(startrange, endrange+1):
-    #finding number of digits in value
-    number = i
+for num in range(startrange, endrange+1):
+    temp = num
     digits = 0
-    while number > 0:
-        number = number//10
+    while temp > 0:
+        temp = temp//10
         digits += 1
-    number = i
+    
+    
+    
+    num = temp
     sum = 0
-    while number > 0:
-        value = number%10
+    while temp > 0:
+        value = temp%10
         sum += value**digits
-    if sum == i:
-    #finding if value is special number
-        print(i)
+        temp = temp // 10
+    if sum == num:
+        print(num)
