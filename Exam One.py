@@ -9,7 +9,7 @@ print("Winner & Losers Game - Human is even, Computer is odd")
 
 for rnd in range(1,6):
     print("Round:", rnd)
-    hguess = int(input("Enter your guess: "))
+    hguess = int(input("Enter your guess (1-5): "))
     cguess = randint(1,5)
     print(f"Human Guess: {hguess} - Computer Guess: {cguess}")
     sum = hguess + cguess
