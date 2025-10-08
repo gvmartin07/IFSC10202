@@ -25,7 +25,7 @@ while x != "":
     output.write(str(decimaldegree) + "\n")
     #finding records processed
     record += 1
-    angles.readline()
+    x = angles.readline()
 
 print(record, "records processed")
 
