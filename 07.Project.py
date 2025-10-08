@@ -1,7 +1,7 @@
 #grab ddmmss from txt file then convert and write to output file, print amount of data processed
 # degree symbol is chr(176)
 def ParseDegreeString(ddmmss):
-    d = ddmmss
+    d = ddmmss.replace("\n", "")
     degreeloc = d.find(chr(176))
     minuteloc = d.find("'")
     secondloc = d.find(chr(34))
@@ -20,10 +20,14 @@ x = angles.readline()
 record = 0
 
 while x != "":
-    angles.readline().replace("\n","")
     degrees, minutes, seconds = ParseDegreeString(x)
     decimaldegree = DDMMSStoDecimal(degrees, minutes, seconds)
-    output.write(str(decimaldegree))
+    output.write(str(decimaldegree) + "\n")
     #finding records processed
     record += 1
+    angles.readline()
+
 print(record, "records processed")
+
+angles.close()
+output.close()
